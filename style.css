@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#secret-word {
+    font-size: 4em;
+}
+
+#secret-word span{
+    padding: 4px;
+}
+
+#secret-word {
+    margin: 50px;
+}
+
+#wrong-word {
+    letter-spacing: 0.5em;
+}
+
+#lives {
+    font-size: 4em;
+    color: #FF0000;
+}
+
