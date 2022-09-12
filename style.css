@@ -21,10 +21,6 @@ body {
     padding: 4px;
 }
 
-#secret-word {
-    margin: 50px;
-}
-
 #wrong-word {
     letter-spacing: 0.5em;
 }
@@ -34,3 +30,62 @@ body {
     color: #FF0000;
 }
 
+#hangman-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left: 2em;
+}
+
+#hangman-container img {
+    position: absolute;
+}
+
+#hangman-1 {
+    display: none;
+}
+
+#hangman-2 {
+    display: none;
+}
+
+#hangman-3 {
+    display: none;
+    left: 172px;
+}
+
+#hangman-4 {
+    display: none;
+    left: 145px;
+    top: 45px;
+}
+
+#hangman-5 {
+    display: none;
+    top: 102px;
+    left: 172px;
+}
+
+#hangman-6 {
+    display: none;
+    top: 120px;
+    left: 142px;
+}
+
+#hangman-7 {
+    display: none;
+    top: 120px;
+    left: 177px;
+}
+
+#hangman-8 {
+    display: none;
+    top: 180px;
+    left: 142px;
+}
+
+#hangman-9 {
+    display: none;
+    top: 180px;
+    left: 177px;
+}

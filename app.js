@@ -30,9 +30,11 @@ const alphabet = [
 const secretWordDiv = document.getElementById("secret-word");
 const wrongLetterDiv = document.getElementById("wrong-word");
 const livesDiv = document.getElementById("lives");
+const stickImg = document.querySelectorAll(".img");
 let inCorrectLetter = [];
-let lives = 9;
 let secretWord = '';
+let lives = 9;
+let strike = 0;
 
 fetch('words_hangman.txt')
 .then(response => response.text())
@@ -72,10 +74,15 @@ document.addEventListener('keydown', (e) => {
             inCorrectLetter.push(charGuess);
             wrongLetterDiv.innerHTML += charGuess;
             lives--;
+            strike++;
             if (lives == 0) {
                 livesDiv.innerHTML = 'game over!<br>' + secretWord;
             } else {
                 livesDiv.innerText = lives;
+                if (strike > 0) {
+                    let stickDiv = document.getElementById("hangman-" + strike);
+                    stickDiv.style.display = "block";
+                }
             }
         }
     }
